@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Funções em JavaScript</title>
+</head>
+<body>
+
+<script>
+
+    function mostrarMensagem() {
+        document.write("Seja bem-vindo ao JavaScript!<br><br>");
+    }
+
+    function saudarAluno(nome) {
+        document.write("Olá, " + nome + "! Que bom te ver!<br><br>");
+    }
+
+    mostrarMensagem();
+    saudarAluno("João");
+
+    function converterParaMetros(centimetros) {
+        return centimetros / 100;
+    }
+
+    let metros = converterParaMetros(250);
+    document.write("250 cm em metros: " + metros + "m<br><br>");
+
+    function calcularMedia(nota1, nota2) {
+        return (nota1 + nota2) / 2;
+    }
+
+    let media = calcularMedia(6.5, 10.0);
+    document.write("Média das notas: " + media + "<br><br>");
+
+
+    function calcularArea(largura, altura) {
+        return largura * altura;
+    }
+
+    let area = calcularArea(2, 15);
+    document.write("Área do retângulo: " + area + " m²<br><br>");
+
+
+    function calcularDesconto(precoOriginal, desconto) {
+        return precoOriginal - desconto;
+    }
+
+    let precoFinal = calcularDesconto(360, 20);
+    document.write("Preço final com desconto: R$" + precoFinal + "<br><br>");
+
+    function fraseApresentacao(nome, idade, cidade) {
+        return "Olá, meu nome é " + nome + ", tenho " + idade + " anos e moro em " + cidade + ".";
+    }
+
+    let apresentacao = fraseApresentacao("Maria", 25, "Teresina");
+    document.write(apresentacao + "<br><br>");
+
+</script>
+
+</body>
+</html>
